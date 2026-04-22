@@ -1,0 +1,174 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Link from "next/link";
+
+const DESTINATIONS = [
+  { city: "Lisbon", country: "Portugal", emoji: "🇵🇹", tagline: "Sun-drenched streets & pastéis de nata", color: "#E8A87C" },
+  { city: "Tokyo", country: "Japan", emoji: "🇯🇵", tagline: "Where tradition meets neon", color: "#C97B84" },
+  { city: "Medellín", country: "Colombia", emoji: "🇨🇴", tagline: "Eternal spring in the mountains", color: "#85B79D" },
+  { city: "Reykjavik", country: "Iceland", emoji: "🇮🇸", tagline: "Northern lights & volcanic wonders", color: "#7B8CDE" },
+  { city: "Bangkok", country: "Thailand", emoji: "🇹🇭", tagline: "Street food paradise under $20/day", color: "#D4A373" },
+  { city: "Porto", country: "Portugal", emoji: "🇵🇹", tagline: "Port wine & azulejo tiles", color: "#6B9AC4" },
+  { city: "Mexico City", country: "Mexico", emoji: "🇲🇽", tagline: "Tacos, museums & ancient ruins", color: "#C97B63" },
+  { city: "Budapest", country: "Hungary", emoji: "🇭🇺", tagline: "Thermal baths & ruin bars", color: "#A8B88C" },
+];
+
+const STEPS = [
+  { icon: "🔍", title: "Search", desc: "Pick your departure city and budget. Leave the destination blank to explore deals worldwide." },
+  { icon: "📊", title: "Compare", desc: "We sort through thousands of routes and show you the cheapest options, with stops, duration, and airline details." },
+  { icon: "🎫", title: "Book", desc: "Click through to book directly. We never charge service fees — what you see is what you pay." },
+];
+
+const WHY = [
+  { icon: "🍁", title: "Canada-first", desc: "Optimized for CAD pricing and Canadian departure airports. No more converting USD in your head." },
+  { icon: "🌍", title: "Anywhere search", desc: "Don't know where to go? Search with no destination and discover the cheapest flights worldwide." },
+  { icon: "⚡", title: "Real-time prices", desc: "Prices pulled live from 200+ airlines. No cached data, no bait-and-switch." },
+  { icon: "🔔", title: "Price alerts", desc: "Set your budget and get notified the moment a route drops below your target." },
+  { icon: "🚫", title: "Zero fees", desc: "We never charge booking fees. You book directly with the airline at the price shown." },
+  { icon: "📱", title: "Mobile ready", desc: "Search on the go. Our site works beautifully on any device." },
+];
+
+export default function HomePage() {
+  return (
+    <>
+      <Navbar />
+
+      {/* ═══ HERO ═══ */}
+      <section className="relative bg-stone-925 min-h-[70vh] flex items-center overflow-hidden">
+        <div className="grain-overlay" />
+        <div className="relative max-w-3xl mx-auto text-center px-6 py-24">
+          <div className="inline-block px-4 py-1.5 bg-amber-900/15 text-amber-warmth rounded-full text-[13px] font-sans font-medium mb-7 border border-amber-900/20">
+            ✈ Cheap flights from Canada
+          </div>
+          <h1 className="text-5xl md:text-7xl text-stone-50 leading-[1.05] mb-6 font-serif tracking-tight">
+            Stop overpaying<br />for flights.
+          </h1>
+          <p className="text-lg text-stone-500 max-w-xl mx-auto mb-10 leading-relaxed font-sans">
+            We scan thousands of routes daily to find you impossibly cheap flights
+            from Canadian airports to anywhere in the world.
+          </p>
+          <div className="flex gap-3 justify-center flex-wrap">
+            <Link
+              href="/search"
+              className="px-7 py-3.5 bg-stone-50 text-stone-900 rounded-lg text-[15px] font-sans font-semibold no-underline hover:bg-white transition-colors"
+            >
+              Find Cheap Flights →
+            </Link>
+            <a
+              href="#how-it-works"
+              className="px-7 py-3.5 bg-transparent text-stone-500 border border-stone-700 rounded-lg text-[15px] font-sans no-underline hover:border-stone-500 transition-colors"
+            >
+              How it works
+            </a>
+          </div>
+          <div className="flex justify-center gap-12 mt-14 pt-8 border-t border-white/10">
+            {[["200+", "Airlines"], ["99", "Countries"], ["$0", "Service fees"]].map(([num, label]) => (
+              <div key={label} className="text-center">
+                <span className="block text-3xl font-serif text-stone-50">{num}</span>
+                <span className="text-[13px] font-sans text-stone-600">{label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ HOW IT WORKS ═══ */}
+      <section id="how-it-works" className="py-20 px-6 bg-stone-50">
+        <div className="max-w-5xl mx-auto">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">How it works</span>
+          <h2 className="text-3xl md:text-4xl font-serif mb-12">Three steps to your next adventure</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {STEPS.map((s, i) => (
+              <div key={i} className="bg-white p-9 rounded-xl border border-stone-200 relative hover-lift">
+                <span className="text-3xl">{s.icon}</span>
+                <span className="absolute top-5 right-6 text-5xl font-serif text-stone-100">0{i + 1}</span>
+                <h3 className="text-xl font-serif mt-4 mb-2">{s.title}</h3>
+                <p className="text-sm font-sans text-stone-500 leading-relaxed m-0">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ DESTINATIONS ═══ */}
+      <section className="py-20 px-6 bg-[#FAF7F2]">
+        <div className="max-w-5xl mx-auto">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Inspiration</span>
+          <h2 className="text-3xl md:text-4xl font-serif mb-12">Trending destinations from Canada</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {DESTINATIONS.map((d, i) => (
+              <Link
+                key={i}
+                href={`/search?to=${d.city.substring(0, 3).toUpperCase()}`}
+                className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900"
+                style={{ borderTop: `3px solid ${d.color}` }}
+              >
+                <span className="text-3xl">{d.emoji}</span>
+                <h3 className="text-lg font-serif mt-2.5 mb-0.5">{d.city}</h3>
+                <span className="text-[13px] font-sans text-stone-400">{d.country}</span>
+                <p className="text-[13px] font-sans text-stone-500 leading-relaxed mt-2.5 mb-2">{d.tagline}</p>
+                <span className="text-[13px] font-sans font-semibold" style={{ color: d.color }}>Search deals →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ DEAL ALERTS ═══ */}
+      <section className="py-20 px-6 bg-stone-925 text-center">
+        <div className="max-w-5xl mx-auto">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Never miss a deal</span>
+          <h2 className="text-3xl md:text-4xl font-serif text-stone-50 mb-4">Get flight deals in your inbox</h2>
+          <p className="text-stone-500 font-sans max-w-md mx-auto mb-8 leading-relaxed">
+            We monitor prices 24/7. When we spot a deal under your budget from your home airport, we&apos;ll email you before it&apos;s gone.
+          </p>
+          <div className="flex gap-2.5 max-w-md mx-auto flex-wrap justify-center">
+            <input
+              type="email"
+              placeholder="your@email.com"
+              className="flex-1 min-w-[220px] px-4 py-3.5 rounded-lg border border-stone-700 bg-stone-800 text-stone-50 text-[15px] font-sans outline-none"
+            />
+            <button className="px-6 py-3.5 bg-stone-50 text-stone-900 rounded-lg text-[15px] font-sans font-semibold border-none cursor-pointer hover:bg-white transition-colors flex-shrink-0">
+              Subscribe Free
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ WHY US ═══ */}
+      <section className="py-20 px-6 bg-stone-50">
+        <div className="max-w-5xl mx-auto">
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Why SkyScout</span>
+          <h2 className="text-3xl md:text-4xl font-serif mb-12">Built for Canadian travelers</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            {WHY.map((w, i) => (
+              <div key={i} className="p-7 rounded-lg border border-stone-200 bg-white hover-lift">
+                <span className="text-3xl">{w.icon}</span>
+                <h3 className="text-lg font-serif mt-3 mb-1.5">{w.title}</h3>
+                <p className="text-sm font-sans text-stone-500 leading-relaxed m-0">{w.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ CTA ═══ */}
+      <section className="py-20 px-6 bg-[#FAF7F2] text-center">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-serif mb-4">Ready to fly for less?</h2>
+          <p className="text-stone-500 font-sans mb-8 leading-relaxed">
+            Join thousands of Canadians who save hundreds on flights every year.
+          </p>
+          <Link
+            href="/search"
+            className="inline-block px-8 py-4 bg-stone-900 text-stone-50 rounded-lg text-base font-sans font-semibold no-underline hover:bg-stone-800 transition-colors"
+          >
+            Start Searching — It&apos;s Free →
+          </Link>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+}
