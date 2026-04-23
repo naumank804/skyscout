@@ -1,5 +1,6 @@
 "use client";
 
+<<<<<<< HEAD
 import { useEffect, useRef } from "react";
 
 export default function WhiteLabelSearch({ showResults = false }) {
@@ -47,3 +48,13 @@ export default function WhiteLabelSearch({ showResults = false }) {
     </div>
   );
 }
+=======
+export default function WhiteLabelSearch() {
+  return (
+    <div className="max-w-5xl mx-auto px-6">
+      {/* Travelpayouts WL widget injects the search form into this div */}
+      <div id="tpwl-search"></div>
+    </div>
+  );
+}
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87

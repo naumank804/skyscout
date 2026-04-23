@@ -37,6 +37,7 @@ export default function HomePage() {
       {/* ═══ HERO + SEARCH ═══ */}
       <section className="relative bg-stone-925 overflow-hidden">
         <div className="grain-overlay" />
+<<<<<<< HEAD
         <div className="relative max-w-3xl mx-auto text-center px-6 pt-16 pb-4">
           <div className="inline-block px-4 py-1.5 bg-amber-900/15 rounded-full text-[13px] font-sans font-medium mb-6 border border-amber-900/20" style={{ color: "#D4A373" }}>
             ✈ Cheap flights from Canada
@@ -57,6 +58,27 @@ export default function HomePage() {
 
         {/* Stats */}
         <div className="relative max-w-3xl mx-auto px-6 pb-14">
+=======
+        <div className="relative max-w-3xl mx-auto text-center px-6 pt-20 pb-6">
+          <div className="inline-block px-4 py-1.5 bg-amber-900/15 text-amber-warmth rounded-full text-[13px] font-sans font-medium mb-7 border border-amber-900/20">
+            ✈ Cheap flights from Canada
+          </div>
+          <h1 className="text-4xl md:text-6xl text-stone-50 leading-[1.05] mb-6 font-serif tracking-tight">
+            Stop overpaying<br />for flights.
+          </h1>
+          <p className="text-lg text-stone-500 max-w-xl mx-auto mb-8 leading-relaxed font-sans">
+            Compare prices from 200+ airlines and dozens of booking agencies. Find the cheapest flight from any Canadian airport to anywhere in the world.
+          </p>
+        </div>
+
+        {/* Search widget embedded right in the hero */}
+        <div className="relative pb-12">
+          <WhiteLabelSearch />
+        </div>
+
+        {/* Stats */}
+        <div className="relative max-w-3xl mx-auto px-6 pb-16">
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
           <div className="flex justify-center gap-12 pt-8 border-t border-white/10">
             {[["200+", "Airlines"], ["50+", "Agencies"], ["$0", "Service fees"]].map(([num, label]) => (
               <div key={label} className="text-center">
@@ -71,7 +93,11 @@ export default function HomePage() {
       {/* ═══ HOW IT WORKS ═══ */}
       <section id="how-it-works" className="py-20 px-6 bg-stone-50">
         <div className="max-w-5xl mx-auto">
+<<<<<<< HEAD
           <span className="text-xs font-sans font-bold uppercase tracking-widest mb-3 block" style={{ color: "#D4A373" }}>How it works</span>
+=======
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">How it works</span>
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
           <h2 className="text-3xl md:text-4xl font-serif mb-12">Three steps to your next adventure</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {STEPS.map((s, i) => (
@@ -89,6 +115,7 @@ export default function HomePage() {
       {/* ═══ DESTINATIONS ═══ */}
       <section className="py-20 px-6 bg-[#FAF7F2]">
         <div className="max-w-5xl mx-auto">
+<<<<<<< HEAD
           <span className="text-xs font-sans font-bold uppercase tracking-widest mb-3 block" style={{ color: "#D4A373" }}>Inspiration</span>
           <h2 className="text-3xl md:text-4xl font-serif mb-12">Trending destinations from Canada</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -97,6 +124,16 @@ export default function HomePage() {
                 key={i}
                 href="/search"
                 className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900 block"
+=======
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Inspiration</span>
+          <h2 className="text-3xl md:text-4xl font-serif mb-12">Trending destinations from Canada</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {DESTINATIONS.map((d, i) => (
+              <Link
+                key={i}
+                href="/search"
+                className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900"
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
                 style={{ borderTop: `3px solid ${d.color}` }}
               >
                 <span className="text-3xl">{d.emoji}</span>
@@ -104,7 +141,11 @@ export default function HomePage() {
                 <span className="text-[13px] font-sans text-stone-400">{d.country}</span>
                 <p className="text-[13px] font-sans text-stone-500 leading-relaxed mt-2.5 mb-2">{d.tagline}</p>
                 <span className="text-[13px] font-sans font-semibold" style={{ color: d.color }}>Search deals →</span>
+<<<<<<< HEAD
               </a>
+=======
+              </Link>
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
             ))}
           </div>
         </div>
@@ -113,7 +154,11 @@ export default function HomePage() {
       {/* ═══ DEAL ALERTS ═══ */}
       <section className="py-20 px-6 bg-stone-925 text-center">
         <div className="max-w-5xl mx-auto">
+<<<<<<< HEAD
           <span className="text-xs font-sans font-bold uppercase tracking-widest mb-3 block" style={{ color: "#D4A373" }}>Never miss a deal</span>
+=======
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Never miss a deal</span>
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
           <h2 className="text-3xl md:text-4xl font-serif text-stone-50 mb-4">Get flight deals in your inbox</h2>
           <p className="text-stone-500 font-sans max-w-md mx-auto mb-8 leading-relaxed">
             We monitor prices 24/7. When we spot a deal under your budget from your home airport, we&apos;ll email you before it&apos;s gone.
@@ -134,7 +179,11 @@ export default function HomePage() {
       {/* ═══ WHY US ═══ */}
       <section className="py-20 px-6 bg-stone-50">
         <div className="max-w-5xl mx-auto">
+<<<<<<< HEAD
           <span className="text-xs font-sans font-bold uppercase tracking-widest mb-3 block" style={{ color: "#D4A373" }}>Why SkyScout</span>
+=======
+          <span className="text-xs font-sans font-bold uppercase tracking-widest text-amber-warmth mb-3 block">Why SkyScout</span>
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
           <h2 className="text-3xl md:text-4xl font-serif mb-12">Built for Canadian travelers</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {WHY.map((w, i) => (
@@ -155,12 +204,20 @@ export default function HomePage() {
           <p className="text-stone-500 font-sans mb-8 leading-relaxed">
             Join thousands of Canadians who save hundreds on flights every year.
           </p>
+<<<<<<< HEAD
           <a
+=======
+          <Link
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
             href="/search"
             className="inline-block px-8 py-4 bg-stone-900 text-stone-50 rounded-lg text-base font-sans font-semibold no-underline hover:bg-stone-800 transition-colors"
           >
             Start Searching — It&apos;s Free →
+<<<<<<< HEAD
           </a>
+=======
+          </Link>
+>>>>>>> 97c5df1ef886039652ece197ded8a59bb3fc2f87
         </div>
       </section>
 
