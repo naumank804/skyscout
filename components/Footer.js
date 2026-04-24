@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-sm font-sans text-stone-500">.ca</span>
             </div>
             <p className="text-stone-500 text-sm font-sans max-w-xs leading-relaxed">
-              Helping Canadians find the cheapest flights worldwide. Powered by Kiwi.com.
+              Helping Canadians find the cheapest flights worldwide. Powered by Travelpayouts.
             </p>
           </div>
 
