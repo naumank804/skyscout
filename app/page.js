@@ -52,7 +52,7 @@ export default function HomePage() {
 
         {/* Search widget in hero */}
         <div className="relative pb-8">
-          <WhiteLabelSearch showResults={false} />
+          <WhiteLabelSearch showResults={true} />
         </div>
 
         {/* Stats */}
