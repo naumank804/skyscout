@@ -1,5 +1,6 @@
 import "./globals.css";
 
+
 export const metadata = {
   title: "SkyScout.ca — Find Cheap Flights from Canada to Anywhere",
   description:
@@ -55,19 +56,18 @@ export default function RootLayout({ children }) {
           NOT using next/script (which breaks on SPA navigation).
           Force English locale and CAD currency to override geo-detection.
         */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.TPWL_CONFIGURATION = {
-                locale: "en",
-                currency: "CAD",
-                host: "${process.env.NEXT_PUBLIC_SITE_URL || ""}",
-                marker: "${process.env.TRAVELPAYOUTS_MARKER || "721635"}",
-                resultsURL: "https://skyscout-two.vercel.app/search",
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.TPWL_CONFIGURATION = {
+                  locale: "en",
+                  currency: "CAD",
+                  marker: "721635",
+                  resultsURL: "https://skyscout-two.vercel.app/search",
               };
-            `,
-          }}
-        />
+                `,
+              }}
+            />
         <script
           data-noptimize="1"
           data-cfasync="false"
