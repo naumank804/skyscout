@@ -19,14 +19,14 @@ const WHY = [
 ];
 
 const DESTINATIONS = [
-  { city: "Lisbon", country: "Portugal", emoji: "🇵🇹", tagline: "Sun-drenched streets & pastéis de nata", color: "#E8A87C" },
-  { city: "Tokyo", country: "Japan", emoji: "🇯🇵", tagline: "Where tradition meets neon", color: "#C97B84" },
-  { city: "Medellín", country: "Colombia", emoji: "🇨🇴", tagline: "Eternal spring in the mountains", color: "#85B79D" },
-  { city: "Reykjavik", country: "Iceland", emoji: "🇮🇸", tagline: "Northern lights & volcanic wonders", color: "#7B8CDE" },
-  { city: "Bangkok", country: "Thailand", emoji: "🇹🇭", tagline: "Street food paradise under $20/day", color: "#D4A373" },
-  { city: "Porto", country: "Portugal", emoji: "🇵🇹", tagline: "Port wine & azulejo tiles", color: "#6B9AC4" },
-  { city: "Mexico City", country: "Mexico", emoji: "🇲🇽", tagline: "Tacos, museums & ancient ruins", color: "#C97B63" },
-  { city: "Budapest", country: "Hungary", emoji: "🇭🇺", tagline: "Thermal baths & ruin bars", color: "#A8B88C" },
+  { city: "Lisbon", code: "LIS", country: "Portugal", cc: "pt", tagline: "Sun-drenched streets & pastéis de nata", color: "#E8A87C" },
+  { city: "Tokyo", code: "NRT", country: "Japan", cc: "jp", tagline: "Where tradition meets neon", color: "#C97B84" },
+  { city: "Medellín", code: "MDE", country: "Colombia", cc: "co", tagline: "Eternal spring in the mountains", color: "#85B79D" },
+  { city: "Reykjavik", code: "KEF", country: "Iceland", cc: "is", tagline: "Northern lights & volcanic wonders", color: "#7B8CDE" },
+  { city: "Bangkok", code: "BKK", country: "Thailand", cc: "th", tagline: "Street food paradise under $20/day", color: "#D4A373" },
+  { city: "Porto", code: "OPO", country: "Portugal", cc: "pt", tagline: "Port wine & azulejo tiles", color: "#6B9AC4" },
+  { city: "Mexico City", code: "MEX", country: "Mexico", cc: "mx", tagline: "Tacos, museums & ancient ruins", color: "#C97B63" },
+  { city: "Budapest", code: "BUD", country: "Hungary", cc: "hu", tagline: "Thermal baths & ruin bars", color: "#A8B88C" },
 ];
 
 export default function HomePage() {
@@ -93,13 +93,21 @@ export default function HomePage() {
           <h2 className="text-3xl md:text-4xl font-serif mb-12">Trending destinations from Canada</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {DESTINATIONS.map((d, i) => (
-              <a
+  
                 key={i}
-                href="/search"
+                href={`https://www.aviasales.com/search/YYZ1${d.code}1?marker=721635&locale=en&currency=CAD`}
+                target="_blank"
+                rel="noreferrer noopener"
                 className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900 block"
                 style={{ borderTop: `3px solid ${d.color}` }}
               >
-                <span className="text-3xl">{d.emoji}</span>
+                <img
+                  src={`https://flagcdn.com/36x27/${d.cc}.png`}
+                  alt={d.country}
+                  width={36}
+                  height={27}
+                  style={{ borderRadius: "3px" }}
+                />
                 <h3 className="text-lg font-serif mt-2.5 mb-0.5">{d.city}</h3>
                 <span className="text-[13px] font-sans text-stone-400">{d.country}</span>
                 <p className="text-[13px] font-sans text-stone-500 leading-relaxed mt-2.5 mb-2">{d.tagline}</p>
