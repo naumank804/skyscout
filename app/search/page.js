@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import WhiteLabelSearch from "@/components/WhiteLabelSearch";
 
 export const metadata = {
-  title: "Search Cheap Flights from Canada | SkyScout.ca",
+  title: "Search Cheap Flights from Canada | SkyScoutTravel.com",
   description:
     "Search and compare flights from 200+ airlines. Find cheap flights from Toronto, Vancouver, Montreal and all Canadian airports.",
 };

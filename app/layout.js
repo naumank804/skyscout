@@ -2,7 +2,7 @@ import "./globals.css";
 
 
 export const metadata = {
-  title: "SkyScout.ca — Find Cheap Flights from Canada to Anywhere",
+  title: "SkyScoutTravel.com — Find Cheap Flights from Canada to Anywhere",
   description:
     "SkyScout helps Canadian travelers find the cheapest flights worldwide. Search 200+ airlines, compare prices from 50+ agencies, and book with zero service fees.",
   keywords: [
@@ -16,9 +16,8 @@ export const metadata = {
     title: "SkyScout.ca — Cheap Flights from Canada",
     description:
       "Find impossibly cheap flights from Canadian airports to anywhere in the world.",
-    url: "https://skyscout.ca",
-    siteName: "SkyScout",
-    locale: "en_CA",
+    url: "https://skyscouttravel.com",
+    siteName: "SkyScoutTravel    locale: "en_CA",
     type: "website",
   },
   robots: { index: true, follow: true },

@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Privacy Policy | SkyScout.ca",
+  title: "Privacy Policy | SkyScoutTravel.com",
 };
 
 export default function PrivacyPage() {
@@ -16,7 +16,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-serif text-stone-900 mt-8 mb-3">Information We Collect</h2>
           <p className="mb-4">
-            SkyScout.ca collects minimal personal information. When you use our flight search, queries are sent directly to the Kiwi.com Tequila API — we do not store your search history on our servers.
+            SkyScoutTravel.com collects minimal personal information. When you use our flight search, queries are sent directly to the Kiwi.com Tequila API — we do not store your search history on our servers.
           </p>
           <p className="mb-4">
             If you subscribe to our deal alerts, we collect your email address solely for the purpose of sending you flight deal notifications. You can unsubscribe at any time.
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-serif text-stone-900 mt-8 mb-3">Affiliate Links</h2>
           <p className="mb-4">
-            When you click a booking link on SkyScout, you are redirected to Kiwi.com where your booking is processed. We earn a commission on completed bookings at no extra cost to you. Kiwi.com has its own privacy policy governing how they handle your booking data.
+            When you click a booking link on SkyScoutTravel, you are redirected to Kiwi.com where your booking is processed. We earn a commission on completed bookings at no extra cost to you. Kiwi.com has its own privacy policy governing how they handle your booking data.
           </p>
 
           <h2 className="text-xl font-serif text-stone-900 mt-8 mb-3">Data Storage</h2>
@@ -39,7 +39,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-serif text-stone-900 mt-8 mb-3">Contact</h2>
           <p className="mb-4">
-            For privacy-related questions, contact us at privacy@skyscout.ca.
+            For privacy-related questions, contact us at privacy@skyscouttravel.com.
           </p>
         </div>
       </main>

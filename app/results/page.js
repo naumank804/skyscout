@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import WhiteLabelSearch from "@/components/WhiteLabelSearch";
 
 export const metadata = {
-  title: "Flight Search Results | SkyScout.ca",
+  title: "Flight Search Results | SkyScoutTravel.com",
   description:
     "Compare flight prices from 200+ airlines and book the cheapest deals.",
 };

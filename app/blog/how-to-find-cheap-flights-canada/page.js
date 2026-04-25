@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Find Cheap Flights from Canada: The Complete Guide (2026) | SkyScout.ca",
+  title: "How to Find Cheap Flights from Canada: The Complete Guide (2026) | SkyScoutTravel.com",
   description: "The ultimate guide for Canadian travelers. Learn flexible date searching, error fares, best booking windows, airline tricks, and the tools pros use to find cheap flights.",
 };
 
@@ -45,7 +45,7 @@ export default function BlogPost() {
               This is the single most impactful thing you can do. The difference between the cheapest and most expensive day to fly on the same route can be $200–$500. If you can be flexible by even a few days, you&apos;ll save significantly.
             </p>
             <p className="mb-4">
-              Use tools that let you search across a range of dates rather than fixed dates. SkyScout&apos;s &ldquo;anywhere&rdquo; search lets you specify a departure window and trip length, then shows you the cheapest options across all dates and destinations.
+              Use tools that let you search across a range of dates rather than fixed dates. SkyScoutTravel&apos;s &ldquo;anywhere&rdquo; search lets you specify a departure window and trip length, then shows you the cheapest options across all dates and destinations.
             </p>
             <p className="mb-6">
               <strong>Best days to fly:</strong> Tuesdays and Wednesdays are consistently the cheapest for departures. Saturdays are usually the most expensive. For return flights, mid-week is again your best bet.
@@ -113,7 +113,7 @@ export default function BlogPost() {
 
             <h2 className="text-2xl font-serif text-stone-900 mt-10 mb-4">7. Use the Right Tools</h2>
             <p className="mb-6">
-              Generic flight search engines work, but specialized tools give you an edge. SkyScout is built specifically for Canadian travelers — we search in CAD, focus on Canadian departure airports, and our &ldquo;anywhere&rdquo; search is designed to surface the cheapest global deals. Combined with price alerts, you&apos;ll never miss a deal from your home airport.
+              Generic flight search engines work, but specialized tools give you an edge. SkyScoutTravel is built specifically for Canadian travelers — we search in CAD, focus on Canadian departure airports, and our &ldquo;anywhere&rdquo; search is designed to surface the cheapest global deals. Combined with price alerts, you&apos;ll never miss a deal from your home airport.
             </p>
 
             {/* CTA */}

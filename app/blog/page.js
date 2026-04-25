@@ -54,7 +54,7 @@ const POSTS = [
 ];
 
 export const metadata = {
-  title: "Cheap Flight Tips & Deals Blog | SkyScout.ca",
+  title: "Cheap Flight Tips & Deals Blog | SkyScoutTravel.com",
   description: "Tips, guides, and deal alerts for Canadian travelers. Learn how to find cheap flights from Toronto, Vancouver, Montreal and other Canadian airports.",
 };
 

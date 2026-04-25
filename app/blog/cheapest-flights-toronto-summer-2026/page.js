@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "The 15 Cheapest Flights from Toronto This Summer (2026) | SkyScout.ca",
+  title: "The 15 Cheapest Flights from Toronto This Summer (2026) | SkyScoutTravel.com",
   description: "The cheapest round-trip flights from Toronto Pearson (YYZ) for summer 2026. Deals under $300 to Cancún, Fort Lauderdale, Bogotá, Lisbon, and more.",
   openGraph: {
     title: "The 15 Cheapest Flights from Toronto This Summer (2026)",
@@ -124,7 +124,7 @@ export default function BlogPost() {
             <div className="mt-10 p-6 bg-stone-100 rounded-lg">
               <h4 className="text-sm font-sans font-bold text-stone-500 uppercase tracking-wide mb-2">Methodology</h4>
               <p className="text-[13px] font-sans text-stone-500 leading-relaxed m-0">
-                Prices were compiled from searches conducted between April 1–20, 2026 for round-trip flights departing YYZ between June 1 and August 31, 2026. We used the Kiwi.com Tequila API to aggregate fares from 200+ airlines. All prices shown in CAD. Actual prices may vary based on travel dates, availability, and booking timing. SkyScout earns a commission when you book through our links at no extra cost to you.
+                Prices were compiled from searches conducted between April 1–20, 2026 for round-trip flights departing YYZ between June 1 and August 31, 2026. We used the Kiwi.com Tequila API to aggregate fares from 200+ airlines. All prices shown in CAD. Actual prices may vary based on travel dates, availability, and booking timing. SkyScoutTravel earns a commission when you book through our links at no extra cost to you.
               </p>
             </div>
           </div>
