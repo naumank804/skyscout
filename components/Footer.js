@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -17,22 +16,21 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
           <div className="flex gap-16 flex-wrap">
             <div className="flex flex-col gap-2.5">
               <h4 className="text-xs font-sans font-bold text-stone-500 uppercase tracking-wider mb-1">Product</h4>
-              <Link href="/search" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Flight Search</Link>
-              <Link href="/blog" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Blog</Link>
+              <a href="/search" className="text-sm font-i text-stone-600 no-underline hover:text-stone-400">Flight Search</a>
+              <a href="/blog" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Blog</a>
             </div>
             <div className="flex flex-col gap-2.5">
               <h4 className="text-xs font-sans font-bold text-stone-500 uppercase tracking-wider mb-1">Company</h4>
-              <Link href="/about" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">About</Link>
-              <Link href="/contact" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Contact</Link>
+              <a href="/about" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">About</a>
+              <a href="/contact" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Contact</a>
             </div>
             <div className="flex flex-col gap-2.5">
               <h4 className="text-xs font-sans font-bold text-stone-500 uppercase tracking-wider mb-1">Legal</h4>
-              <Link href="/privacy" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Privacy Policy</Link>
-              <Link href="/terms" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Terms of Service</Link>
+              <a href="/privacy" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Privacy Policy</a>
+              <a href="/terms" className="text-sm font-sans text-stone-600 no-underline hover:text-stone-400">Terms of Service</a>
               <span className="text-sm font-sans text-stone-600">Affiliate Disclosure</span>
             </div>
           </div>

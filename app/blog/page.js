@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Link from "next/link";
+
 
 const POSTS = [
   {
@@ -92,9 +92,9 @@ export default function BlogPage() {
                   <span className="text-[12px] font-sans text-stone-400">· {post.readTime}</span>
                 </div>
                 <h2 className="text-xl md:text-2xl font-serif mb-2 leading-tight">
-                  <Link href={`/blog/${post.slug}`} className="text-stone-900 no-underline hover:text-amber-warmth transition-colors">
+                  <a href={`/blog/${post.slug}`} className="text-stone-900 no-underline hover:text-amber-warmth transition-colors">
                     {post.title}
-                  </Link>
+                  </a>
                 </h2>
                 <p className="text-sm font-sans text-stone-500 leading-relaxed m-0">
                   {post.excerpt}

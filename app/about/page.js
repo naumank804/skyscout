@@ -47,12 +47,12 @@ export default function AboutPage() {
             </p>
 
             <div className="mt-10 text-center">
-              <Link
+              <a
                 href="/search"
                 className="inline-block px-8 py-4 bg-stone-900 text-stone-50 rounded-lg text-base font-sans font-semibold no-underline hover:bg-stone-800 transition-colors"
               >
                 Start Searching →
-              </Link>
+              </a>
             </div>
           </div>
         </section>
