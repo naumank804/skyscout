@@ -8,8 +8,8 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-1.5 mb-3">
               <span className="text-xl text-amber-warmth">◆</span>
-              <span className="text-[22px] font-serif text-stone-50">SkyScout</span>
-              <span className="text-sm font-sans text-stone-500">.ca</span>
+              <span className="text-[22px] font-serif text-stone-50">SkyScoutTravel</span>
+              <span className="text-sm font-sans text-stone-500">.com</span>
             </div>
             <p className="text-stone-500 text-sm font-sans max-w-xs leading-relaxed">
               Helping Canadians find the cheapest flights worldwide. Powered by Travelpayouts.

@@ -16,8 +16,8 @@ export default function Navbar() {
         {/* Logo — use <a> for guaranteed full-page navigation */}
         <a href="/" className="flex items-center gap-1.5 no-underline relative z-[101]">
           <span className="text-xl" style={{ color: "#D4A373" }}>◆</span>
-          <span className="text-[22px] font-serif text-stone-900 font-normal">SkyScout</span>
-          <span className="text-sm font-sans text-stone-400">Travel</span>
+          <span className="text-[22px] font-serif text-stone-900 font-normal">SkyScoutTravel</span>
+          <span className="text-sm font-sans text-stone-400">.com</span>
         </a>
 
         {/* Desktop links */}
