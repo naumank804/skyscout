@@ -13,7 +13,7 @@ export const metadata = {
     "budget travel Canada",
   ],
   openGraph: {
-    title: "SkyScout.ca — Cheap Flights from Canada",
+    title: "SkyScoutTravel.com — Cheap Flights from Canada",
     description:
       "Find impossibly cheap flights from Canadian airports to anywhere in the world.",
     url: "https://skyscouttravel.com",
