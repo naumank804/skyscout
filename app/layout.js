@@ -63,7 +63,7 @@ export default function RootLayout({ children }) {
                   locale: "en",
                   currency: "CAD",
                   marker: "721635",
-                  resultsURL: "https://skyscout-two.vercel.app/search",
+                  resultsURL: "https://skyscouttravel.com/search",
               };
                 `,
               }}

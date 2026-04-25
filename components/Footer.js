@@ -38,7 +38,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-stone-800 py-5 text-sm font-sans text-stone-600">
-          © {new Date().getFullYear()} SkyScout.ca — All rights reserved
+          © {new Date().getFullYear()} SkyScoutTravel.com — All rights reserved
         </div>
       </div>
     </footer>
