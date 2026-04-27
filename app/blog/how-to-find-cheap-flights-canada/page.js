@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Link from "next/link";
+
 
 export const metadata = {
   title: "How to Find Cheap Flights from Canada: The Complete Guide (2026) | SkyScoutTravel.com",
@@ -17,9 +17,9 @@ export default function BlogPost() {
         <section className="bg-stone-925 py-16 px-6 relative overflow-hidden">
           <div className="grain-overlay" />
           <div className="relative max-w-3xl mx-auto">
-            <Link href="/blog" className="text-sm font-sans text-stone-500 no-underline hover:text-amber-warmth mb-6 inline-block">
+            <a href="/blog" className="text-sm font-sans text-stone-500 no-underline hover:text-amber-warmth mb-6 inline-block">
               ← Back to Blog
-            </Link>
+            </a>
             <div className="flex gap-3 items-center mb-4">
               <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-amber-warmth bg-amber-900/20 px-2 py-0.5 rounded">
                 Guide
@@ -124,12 +124,12 @@ export default function BlogPost() {
                 <p className="text-stone-500 text-sm mb-6">
                   Put these tips into action. Search for the cheapest flights from any Canadian airport right now.
                 </p>
-                <Link
-                  href="/search"
-                  className="inline-block px-6 py-3 bg-stone-50 text-stone-900 rounded-lg text-sm font-sans font-semibold no-underline hover:bg-white transition-colors"
-                >
-                  Search Cheap Flights →
-                </Link>
+                <a href="/search" className="inline-block px-6 py-3 bg-stone-50 text-stone-900 rounded-lg text-sm font-sans font-semibold no-underline hover:bg-white transition-colors">Search Cheap Flights →</a>
+
+
+
+
+                
               </div>
             </div>
           </div>
