@@ -96,9 +96,7 @@ export default function HomePage() {
             {DESTINATIONS.map((d, i) => (
               <a
                 key={i}
-                href={`https://www.aviasales.com/search/YYZ1${d.code}1?marker=721635&locale=en&currency=CAD`}
-                target="_blank"
-                rel="noreferrer noopener"
+                href=href={`/search?origin_iata=YYZ&destination_iata=${d.code}`}
                 className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900 block"
                 style={{ borderTop: `3px solid ${d.color}` }}
               >
