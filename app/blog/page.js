@@ -27,6 +27,14 @@ const POSTS = [
   readTime: "15 min read",
   category: "Guide",
   },
+  {
+    slug: "toronto-to-cancun-flight-deals-2026",
+    title: "Toronto to Cancún Flights: How to Find the Cheapest Deals (2026)",
+    excerpt: "Cancún is the most popular sun destination from Toronto — and one of the cheapest. Deals from $279 CAD round trip. Month-by-month pricing, airline comparison, and booking tips.",
+    date: "April 27, 2026",
+    readTime: "12 min read",
+    category: "Route Guide",
+  },
   /*{
     slug: "best-budget-destinations-from-toronto",
     title: "10 Best Budget Destinations You Can Fly to from Toronto for Under $400",

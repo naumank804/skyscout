@@ -9,6 +9,7 @@ export default function sitemap() {
     { url: `${baseUrl}/blog/cheapest-flights-toronto-summer-2026`, lastModified: new Date("2026-04-20"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/blog/how-to-find-cheap-flights-canada`, lastModified: new Date("2026-04-18"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/blog/cheap-flights-toronto-to-europe-2026`, lastModified: new Date("2026-04-27"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/blog/toronto-to-cancun-flight-deals-2026`, lastModified: new Date("2026-04-27"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.4 },
     { url: `${baseUrl}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
     { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.2 },
