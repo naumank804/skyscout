@@ -19,6 +19,14 @@ const POSTS = [
     readTime: "12 min read",
     category: "Guide",
   },
+  {
+  slug: "cheap-flights-toronto-to-europe-2026",
+  title: "Cheap Flights from Toronto to Europe: Complete Guide (2026)",
+  excerpt: "Everything you need to know about flying from Toronto to Europe without overpaying. The 10 cheapest routes, best airlines, optimal booking windows, and money-saving strategies.",
+  date: "April 27, 2026",
+  readTime: "15 min read",
+  category: "Guide",
+  },
   /*{
     slug: "best-budget-destinations-from-toronto",
     title: "10 Best Budget Destinations You Can Fly to from Toronto for Under $400",
