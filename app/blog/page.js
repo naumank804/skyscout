@@ -19,7 +19,7 @@ const POSTS = [
     readTime: "12 min read",
     category: "Guide",
   },
-  {
+  /*{
     slug: "best-budget-destinations-from-toronto",
     title: "10 Best Budget Destinations You Can Fly to from Toronto for Under $400",
     excerpt: "Think you need to spend $800+ to leave the country? Think again. These incredible destinations are all reachable from Pearson for under $400 round trip.",
@@ -50,7 +50,7 @@ const POSTS = [
     date: "April 8, 2026",
     readTime: "8 min read",
     category: "Route Guide",
-  },
+  },*/
 ];
 
 export const metadata = {
