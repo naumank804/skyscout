@@ -39,9 +39,9 @@ export default function BlogPost() {
         <section className="bg-stone-925 py-16 px-6 relative overflow-hidden">
           <div className="grain-overlay" />
           <div className="relative max-w-3xl mx-auto">
-            <Link href="/blog" className="text-sm font-sans text-stone-500 no-underline hover:text-amber-warmth mb-6 inline-block">
+            <a href="/blog" className="text-sm font-sans text-stone-500 no-underline hover:text-amber-warmth mb-6 inline-block">
               ← Back to Blog
-            </Link>
+            </a>
             <div className="flex gap-3 items-center mb-4">
               <span className="text-[11px] font-sans font-bold uppercase tracking-wider text-amber-warmth bg-amber-900/20 px-2 py-0.5 rounded">
                 Deals
@@ -92,12 +92,12 @@ export default function BlogPost() {
                     <p className="text-sm font-sans text-stone-500 leading-relaxed mt-2 mb-3">
                       {deal.note}
                     </p>
-                    <Link
-                      href={`/search?to=${deal.code}`}
+                    <a
+                      href="/search"
                       className="text-[13px] font-sans font-semibold text-amber-warmth no-underline hover:underline"
                     >
                       Search live prices for {deal.city.split(",")[0]} →
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -111,12 +111,12 @@ export default function BlogPost() {
                 <p className="text-stone-500 font-sans text-sm mb-6">
                   We send out the best flight deals from Canadian airports every week. Free, forever.
                 </p>
-                <Link
+                <a
                   href="/"
                   className="inline-block px-6 py-3 bg-stone-50 text-stone-900 rounded-lg text-sm font-sans font-semibold no-underline hover:bg-white transition-colors"
                 >
                   Subscribe to Deal Alerts →
-                </Link>
+                </a>
               </div>
             </div>
 
