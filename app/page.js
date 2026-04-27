@@ -1,3 +1,4 @@
+"use client";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhiteLabelSearch from "@/components/WhiteLabelSearch";
@@ -120,23 +121,40 @@ export default function HomePage() {
 
       {/* ═══ DEAL ALERTS ═══ */}
       <section className="py-20 px-6 bg-stone-925 text-center">
-        <div className="max-w-5xl mx-auto">
-          <span className="text-xs font-sans font-bold uppercase tracking-widest mb-3 block" style={{ color: "#D4A373" }}>Never miss a deal</span>
-          <h2 className="text-3xl md:text-4xl font-serif text-stone-50 mb-4">Get flight deals in your inbox</h2>
-          <p className="text-stone-500 font-sans max-w-md mx-auto mb-8 leading-relaxed">
-            We monitor prices 24/7. When we spot a deal under your budget from your home airport, we&apos;ll email you before it&apos;s gone.
-          </p>
-          <div className="flex gap-2.5 max-w-md mx-auto flex-wrap justify-center">
-            <input
-              type="email"
-              placeholder="your@email.com"
-              className="flex-1 min-w-[220px] px-4 py-3.5 rounded-lg border border-stone-700 bg-stone-800 text-stone-50 text-[15px] font-sans outline-none"
-            />
-            <button className="px-6 py-3.5 bg-stone-50 text-stone-900 rounded-lg text-[15px] font-sans font-semibold border-none cursor-pointer hover:bg-white transition-colors flex-shrink-0">
-              Subscribe Free
-            </button>
-          </div>
-        </div>
+        <form
+                        onSubmit={async (e) => {
+                          e.preventDefault();
+                          const email = e.target.email.value;
+                          if (!email) return;
+                          try {
+                            await fetch("https://script.google.com/macros/s/AKfycby-r8OjhCCcwdysa7pawggY7u-KKhymKUOJI6Kn0-C4MQfpvms2Hc5MCbID-cKIij4mKw/exec", {
+                              method: "POST",
+                              mode: "no-cors",
+                              headers: { "Content-Type": "application/json" },
+                              body: JSON.stringify({ email }),
+                            });
+                            e.target.email.value = "";
+                            alert("You're on the list! We'll email you when we find deals.");
+                          } catch {
+                            alert("Something went wrong. Please try again.");
+                          }
+                        }}
+                        className="flex gap-2.5 max-w-md mx-auto flex-wrap justify-center"
+                      >
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="your@email.com"
+                          required
+                          className="flex-1 min-w-[220px] px-4 py-3.5 rounded-lg border border-stone-700 bg-stone-800 text-stone-50 text-[15px] font-sans outline-none"
+                        />
+                        <button
+                          type="submit"
+                          className="px-6 py-3.5 bg-stone-50 text-stone-900 rounded-lg text-[15px] font-sans font-semibold border-none cursor-pointer hover:bg-white transition-colors flex-shrink-0"
+                        >
+                          Subscribe Free
+                        </button>
+        </form>
       </section>
 
       {/* ═══ WHY US ═══ */}
