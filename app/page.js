@@ -96,7 +96,7 @@ export default function HomePage() {
             {DESTINATIONS.map((d, i) => (
               <a
                 key={i}
-                href=href={`/search?origin_iata=YYZ&destination_iata=${d.code}`}
+                href={`/search?origin_iata=YYZ&destination_iata=${d.code}`}
                 className="bg-white p-6 rounded-lg hover-lift no-underline text-stone-900 block"
                 style={{ borderTop: `3px solid ${d.color}` }}
               >
