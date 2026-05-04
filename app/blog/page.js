@@ -3,6 +3,24 @@ import Footer from "@/components/Footer";
 
 
 const POSTS = [
+  
+   {
+    slug: "cheapest-destinations-from-vancouver-2026",
+    title: "10 Cheapest International Destinations from Vancouver (2026)",
+    excerpt: "Vancouver's position on the Pacific Rim makes it Canada's gateway to Asia and the US West Coast. LA from $179, Honolulu from $349, Tokyo from $599 — the 10 cheapest places to fly from YVR.",
+    date: "May 2, 2026",
+    readTime: "12 min read",
+    category: "Deals",
+  },
+  {
+    slug: "best-time-to-book-flights-canada-2026",
+    title: "Best Time to Book Flights from Canada in 2026: Data-Backed Guide",
+    excerpt: "When should you book? We analyzed fare trends to find the ideal booking windows for domestic, US, Caribbean, Europe, and Asia flights. Plus: common booking myths debunked.",
+    date: "May 2, 2026",
+    readTime: "14 min read",
+    category: "Research",
+  },
+    
   {
     slug: "cheapest-flights-toronto-summer-2026",
     title: "The 15 Cheapest Flights from Toronto This Summer (2026)",
@@ -35,6 +53,9 @@ const POSTS = [
     readTime: "12 min read",
     category: "Route Guide",
   },
+ 
+
+
   /*{
     slug: "best-budget-destinations-from-toronto",
     title: "10 Best Budget Destinations You Can Fly to from Toronto for Under $400",
